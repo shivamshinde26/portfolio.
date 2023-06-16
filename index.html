@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam - Portfolio | Home</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Fascinate&family=Poppins:ital,wght@0,500;1,200&family=Square+Peg&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Fascinate&family=Foldit:wght@100;400;500&family=Poppins:ital,wght@0,500;1,200&family=Square+Peg&family=Tilt+Prism&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+        color: navy;
+        font-family: 'poppins', sans-serif;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: navy;
+        font-size: 1.2rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background: #ADD8E6;
+    }
+
+    .left {
+        font-size: 3.5rem;
+        font-family: 'Square Peg', cursive;
+        font-weight: 800;
+        transition: all .2s ease-in;
+    }
+
+    .left:hover {
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 23px;
+    }
+
+    #first {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    #first>div {
+        width: 32%;
+    }
+
+    .leftsection {
+        font-size: 2.5rem;
+    }
+
+    .rightsection img {
+        width: 120%;
+        margin: auto;
+    }
+
+    .purple {
+        color: #296E85;
+    }
+
+    a:hover {
+        color: rgb(67, 67, 141);
+    }
+
+    #element {
+        color: #338BA8;
+    }
+
+    #sec {
+        max-width: 80vw;
+        margin: auto;
+        height: 110vh;
+    }
+
+    main hr {
+        border: 0;
+        background: #296E85;
+        height: 1.2px;
+        margin: 56px 84px;
+    }
+
+    #sec h1 {
+        font-size: 40px;
+        height: 70px;
+        text-decoration: underline;
+    }
+
+    .grey {
+        color: gray;
+    }
+
+    #sec .box {
+        background: navy;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: navy;
+        margin: 0 6vw;
+
+    }
+
+    .img-top {
+        width: 54px;
+        position: relative;
+        top: -57px;
+    }
+
+    .vert-head {
+        position: relative;
+        top: 43px;
+        width: 10px;
+    }
+
+    .vert-desc {
+        position: relative;
+        top: 50px;
+        color: #338BA8;
+        width: 130px;
+        font-size: 11px;
+    }
+
+    footer {
+        height: 205x;
+        background-color: #ADD8E6;
+
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 122px;
+    }
+
+    footer ul {
+        list-style: none;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: navy;
+    }
+
+    .foot-third ul li {
+        color: navy;
+    }
+
+    .footer hr {
+        border: 0;
+        background: #296E85;
+        height: 1.2px;
+
+    }
+
+    .footer>div {
+        width: 223px;
+    }
+
+    .morefooter {
+        text-align: center;
+        color: grey;
+
+        padding: 12px 0;
+
+    }
+
+    .btn {
+        width: 180px;
+        height: 60px;
+        color: whitesmoke;
+        background-color: navy;
+        border: 2px solid navy;
+        border-radius: 50px;
+        cursor: pointer;
+        margin: 29px 0;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    #about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 490px;
+    }
+
+    .lambi img {
+        width: 450px;
+        margin: 0 115px;
+
+    }
+
+    .lambi2 {
+        margin: 0 95px 0 0;
+
+    }
+
+    .lambi2 h1 {
+        font-size: 40px;
+        text-decoration: underline;
+
+    }
+
+    .lambi2 .para {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    #education {
+        max-width: 80vw;
+        margin: auto;
+        height: unset;
+    }
+
+    #education h1 {
+
+        text-decoration: underline;
+
+        margin-bottom: -20px;
+        font-size: 40px;
+    }
+
+    .card {
+        min-width: 289px;
+        height: 120px;
+        border: 1.5px solid #ADD8E6;
+        margin: 40px 100px;
+        padding: 15px 40px;
+        transition: all ease-in .3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border: 1px solid navy;
+        color: #296E85;
+    }
+
+    .card .scl {
+        font-weight: 600;
+    }
+
+    @media screen and (max-width:1084px) {
+        nav {
+            flex-direction: column;
+            height: 200px;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        #sec {
+            height: 965px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #first {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex-direction: column;
+            width: 50vw;
+
+        }
+
+        .vertical {
+            height: 205px;
+
+        }
+
+        .vert-head {
+            left: 55px;
+            font-size: 22px;
+        }
+
+        .vert-desc {
+            left: 55px;
+            font-size: 8px;
+        }
+
+        .img-top {
+            left: -10px;
+            top: 122px;
+        }
+
+        .leftsection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100% !important;
+            font-size: 70px;
+        }
+
+        .rightsection {
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .rightsection img {
+            width: 190vw;
+            margin-bottom: 73px;
+        }
+
+        body {
+            min-width: fit-content;
+        }
+
+        nav a {
+            font-size: 30px;
+        }
+
+        .left {
+            font-size: 80px;
+        }
+
+        .btn {
+        
+            width: 300px;
+            height: 110px;
+            font-size: 32px;
+        }
+        .button{
+            top:20px;
+            position: relative;
+    
+        }
+        #element{
+            margin-bottom: 10px;
+        }
+        #about{
+            height: 650px;
+        }
+        .lambi img{
+            width: 100%;
+            height: 100%;
+        }
+        .lambi2 {
+            font-size: 70px;
+            margin-left: 20px;
+            width: 60%;
+        }
+        .lambi2 .para{
+            font-size: 28px;
+        }
+        #education{
+
+            height: 764px;
+           
+        }
+        .cards{
+            display: flex;
+            flex-wrap: no-wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .card{
+            height: 250px;
+
+        }
+        #education h1{
+            text-align: center;
+      
+        }
+        footer{
+            font-size: 12px;
+        }
+        
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Shivam Shinde
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#first">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sec">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="first">
+            <div class="leftsection">
+                <div>Hey! My name is <span class="purple">Shivam</span></div>
+                <div>& I am Passionate about</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn"><a href="./my resume.pdf" download>Download Resume</a></button>
+                    <button class="btn"><a href="https://www.linkedin.com/in/shivam-shinde-aaab61222/">Visit
+                            LinkedIn</a></button>
+
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="4.gif" alt="">
+            </div>
+        </section>
+        <!-- <hr> -->
+        <hr>
+        <section id="about">
+            <div class="lambi">
+                <img src="5.gif" alt="">
+            </div>
+            <div class="lambi2">
+                <h1>About Me</h1>
+                <div class="para">
+                    Insightful Computer Science Engineering Student who excels at Web Devlopment I am
+                    Creative,Hard-working student anticipating graduation in 2025 from Walchand College Of
+                    Engineering,Sangli Poised to apply experience gained in classroom,through projects to make an impact
+                    in the Software Industry
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="sec">
+            <div class="grey">What I have done so far!</div>
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="3.png" alt="" class="img-top">
+                    <div class="vert-head">
+                        Web Devlopment
+                    </div>
+                    <div class="vert-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum voluptatum nobis esse
+                        deleniti distinctio fugit quae consequatur exercitationem obcaecati?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="4.png" alt="" class="img-top">
+                    <div class="vert-head">
+                        Node JS
+                    </div>
+                    <div class="vert-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum voluptatum nobis esse
+                        deleniti distinctio fugit quae consequatur exercitationem obcaecati?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="5.png" alt="" class="img-top">
+                    <div class="vert-head">
+                        React JS
+                    </div>
+                    <div class="vert-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum voluptatum nobis esse
+                        deleniti distinctio fugit quae consequatur exercitationem obcaecati?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="6.png" alt="" class="img-top">
+                    <div class="vert-head">
+                        Android Devlopment
+                    </div>
+                    <div class="vert-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum voluptatum nobis esse
+                        deleniti distinctio fugit quae consequatur exercitationem obcaecati?
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="education">
+            <h1>Education Qualification</h1>
+            <div class="cards">
+                <section class="card">
+            
+                    <h3>Primary Education</h3>
+                    <div>(2007-2013)</div>
+                    <div class="scl">Shri A.B. Patil English School</div>
+                    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis molestias
+                        suscipit
+                        blanditiis sapiente autem laboriosam facilis error optio saepe odit.</div>
+                </section>
+                <section class="card">
+                    <h3>Secondary Education</h3>
+                    <div>(2014-2019)</div>
+                    <div class="scl">Shri A.B. Patil English School</div>
+                    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis molestias
+                        suscipit
+                        blanditiis sapiente autem laboriosam facilis error optio saepe odit.</div>
+                </section>
+            </div>
+            <div class="cards">
+                <section class="card">
+                    <h3>Higher Secondary Education</h3>
+                    <div>(2007-2019)</div>
+                    <div class="scl">Sanjay Ghodawat IIT & Medical Academy</div>
+                    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis molestias
+                        suscipit
+                        blanditiis sapiente autem laboriosam facilis error optio saepe odit.</div>
+                </section>
+                <section class="card">
+                    <h3>B.TECH Engineering</h3>
+                    <div>(2021-2025)</div>
+                    <div class="scl">Walchand College Of Engineering</div>
+                    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis molestias
+                        suscipit
+                        blanditiis sapiente autem laboriosam facilis error optio saepe odit.</div>
+                </section>
+            </section>
+            </div>
+
+            
+
+        <hr>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="foot-fir">
+                <h3>Shivam's Devloper Portfolio</h3>
+            </div>
+            <div class="foot-sec">
+                <strong>Social Media Profiles</strong>
+                <hr>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/shivam-shinde-aaab61222/">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/Cineholic_28">Twitter</a></li>
+                    <li><a href="">What's App</a></li>
+                    <li><a href="https://www.instagram.com/shivamshinde_26/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="foot-third">
+                <strong>Contact Me</strong>
+                <hr>
+                <ul>
+                    <li>8180899075</li>
+                    <li>shivamshinde2663@gmail.com</li>
+                </ul>
+            </div>
+            <div class="foot-four">
+                <strong>Personal Information</strong>
+                <hr>
+                <ul>
+                    <li><a href="">About Me</a></li>
+                    <li><a href="">Future Goals</a></li>
+                    <li><a href="">My Aim</a></li>
+                    <li><a href="">My Blog</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="morefooter">
+            Copyright © www.ShivamShinde.com | All Rights Reserved
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Photography.', 'Cinema.', 'Technology.', 'Web Designing.','Web Devlopment...'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
